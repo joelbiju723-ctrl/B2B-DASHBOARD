@@ -370,7 +370,6 @@ with cl:
         showlegend=False,
         xaxis=dict(tickprefix="$", tickformat=".2s", gridcolor="rgba(148,163,184,0.2)"),
         yaxis=dict(showgrid=False),
-        margin=dict(l=10, r=70, t=50, b=10),
     )
     st.markdown('<div class="chart-box">', unsafe_allow_html=True)
     st.plotly_chart(fig_cat, use_container_width=True)
