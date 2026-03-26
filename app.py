@@ -153,10 +153,14 @@ st.markdown("""
     [data-theme="dark"] .insight-body { color: #94a3b8 !important; }
 
     /* ── Section sub-headings (#### tags) ── */
-    h4 {
-        color: #0f172a !important;
-    }
-    [data-theme="dark"] h4 { color: #e2e8f0 !important; }
+   /* ── ALL Headings (h1-h6) & Subheadings ── */
+h1, h2, h3, h4, h5, h6 {
+    color: #f9fafb !important;
+}
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, 
+[data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
+    color: #ffffff !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
