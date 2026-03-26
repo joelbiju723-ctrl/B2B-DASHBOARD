@@ -1,0 +1,26 @@
+import pandas as pd
+import streamlit as st
+
+st.title("B2B Sales Dashboard")
+
+df = pd.read_excel("B2B_Dataset_1000_Rows.xlsx")
+
+df['Last_Purchase_Date'] = pd.to_datetime(df['Last_Purchase_Date'])
+
+st.header("KPIs")
+
+total_sales = df['Revenue'].sum()
+repeat_customers = df[df['Purchase_Frequency'] > 1]['Client_ID'].nunique()
+total_customers = df['Client_ID'].nunique()
+
+success_rate = (repeat_customers / total_customers) * 100
+
+st.write("Total Sales:", total_sales)
+st.write("Repeat Customers:", repeat_customers)
+st.write("Recommendation Success Rate:", success_rate)
+
+st.header("Charts")
+
+st.bar_chart(df.groupby('Product_Category')['Revenue'].sum())
+st.line_chart(df.groupby('Last_Purchase_Date')['Revenue'].sum())
+st.bar_chart(df.groupby('Region')['Revenue'].sum())
