@@ -75,23 +75,23 @@ st.markdown("""
     }
     [data-theme="dark"] .kpi-label { color: #94a3b8 !important; }
 
-    /* ── Section Headers — visible in both themes ── */
-    .section-header {
-        font-size: 1.25rem;
-        font-weight: 800;
-        margin: 36px 0 18px;
-        padding: 10px 16px;
-        border-left: 5px solid #2563EB;
-        border-radius: 0 8px 8px 0;
-        letter-spacing: -0.3px;
-        /* Light */
-        color: #0f172a;
-        background: linear-gradient(90deg, rgba(37,99,235,0.08) 0%, transparent 100%);
-    }
-    [data-theme="dark"] .section-header {
-        color: #e2e8f0 !important;
-        background: linear-gradient(90deg, rgba(37,99,235,0.18) 0%, transparent 100%) !important;
-    }
+   /* ── Section Headers — visible in both themes ── */
+.section-header {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 36px 0 18px;
+    padding: 10px 16px;
+    border-left: 5px solid #2563EB;
+    border-radius: 0 8px 8px 0;
+    letter-spacing: -0.3px;
+    /* Light */
+    color: #f9fafb !important;  /* ← CHANGED TO LIGHT */
+    background: linear-gradient(90deg, rgba(37,99,235,0.08) 0%, transparent 100%);
+}
+[data-theme="dark"] .section-header {
+    color: #ffffff !important;  /* ← CHANGED TO WHITE */
+    background: linear-gradient(90deg, rgba(37,99,235,0.18) 0%, transparent 100%) !important;
+}
 
     /* ── Chart wrapper boxes ── */
     .chart-box {
