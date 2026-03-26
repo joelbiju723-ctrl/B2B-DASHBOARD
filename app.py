@@ -126,13 +126,14 @@ st.markdown("""
         margin-bottom: 10px;
     }
 
-    /* ── Dashboard title ── */
-    .dash-title {
-        font-size: 2.2rem;
-        font-weight: 900;
-        letter-spacing: -0.8px;
-        /* Light */
-        color: #0f172a;
+   /* ── Dashboard title ── */
+.dash-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+    color: #ffffff;  /* white */
+}
+[data-theme="dark"] .dash-title { color: #ffffff !important; }
     }
     [data-theme="dark"] .dash-title { color: #f1f5f9 !important; }
 
