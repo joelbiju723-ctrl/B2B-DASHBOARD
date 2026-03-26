@@ -393,7 +393,6 @@ with cr:
         barmode="group",
         legend=dict(orientation="h", y=1.12, x=0),
         xaxis=dict(showgrid=False),
-        margin=dict(l=10, r=10, t=60, b=10),
     )
     fig_reg.update_yaxes(tickprefix="$", tickformat=".2s", gridcolor="rgba(148,163,184,0.2)", secondary_y=False)
     fig_reg.update_yaxes(showgrid=False, secondary_y=True)
